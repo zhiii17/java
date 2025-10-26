@@ -1,0 +1,31 @@
+# 哈希表专题笔记
+
+## 核心思想
+- 用空间换时间
+- 通过哈希函数建立key到value的映射
+
+## 常用场景
+1. 快速查找 - O(1)时间复杂度
+2. 去重操作
+3. 缓存数据
+
+## 力扣题目分类
+
+### 基础应用
+- 1.两数之和：经典哈希表应用
+- 242.有效的字母异位词：字符计数
+
+### 进阶应用  
+- 49.字母异位词分组：哈希表+排序
+- 128.最长连续序列：哈希表优化
+
+## 代码模板
+```java
+// 哈希表基础模板
+Map<Integer, Integer> map = new HashMap<>();
+for (int i = 0; i < nums.length; i++) {
+    if (map.containsKey(target - nums[i])) {
+        return new int[]{map.get(target - nums[i]), i};
+    }
+    map.put(nums[i], i);
+}
