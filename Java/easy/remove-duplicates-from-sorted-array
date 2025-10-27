@@ -9,6 +9,7 @@
 1 1 2 2 3
 【样例输出】
 1 2 3
+'''c++
 #include <iostream>
 using namespace std;
 void remove(int L[],int &n){
@@ -43,7 +44,7 @@ int main(){
 	delete[] L;
 	return 0;
 }
-
+'''
 双指针思想的来源
 慢指针(i)：指向当前"有效结果"的最后一个位置
 快指针(j)：遍历整个数组，寻找新的不重复元素
