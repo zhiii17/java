@@ -9,7 +9,7 @@
 1 1 2 2 3
 【样例输出】
 1 2 3
-'''c++
+'''cpp
 #include <iostream>
 using namespace std;
 void remove(int L[],int &n){
